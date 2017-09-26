@@ -1,0 +1,27 @@
+From 90bb5342feb24c160f07ae3e9576489b6a78e4aa Mon Sep 17 00:00:00 2001
+From: Kalev Lember <klember@redhat.com>
+Date: Fri, 21 Jul 2017 11:38:58 +0200
+Subject: [PATCH 01/10] appdata: Fix the app id to match up with the desktop
+ file name
+
+This is needed for the app to properly show up in gnome-software.
+---
+ data/org.gnome.frogr.appdata.xml.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/org.gnome.frogr.appdata.xml.in b/data/org.gnome.frogr.appdata.xml.in
+index 3db2a67..bfb2094 100644
+--- a/data/org.gnome.frogr.appdata.xml.in
++++ b/data/org.gnome.frogr.appdata.xml.in
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright 2009-2017 Mario Sanchez Prada <msanchez@gnome.org> -->
+ <component type="desktop">
+-  <id>frogr.desktop</id>
++  <id>org.gnome.frogr.desktop</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <name>frogr</name>
+   <summary>A flickr uploader for GNOME</summary>
+-- 
+2.13.5
+

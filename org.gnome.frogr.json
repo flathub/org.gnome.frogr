@@ -35,7 +35,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://git.gnome.org/frogr",
+                    "url": "https://gitlab.gnome.org/GNOME/frogr.git",
                     "branch": "RELEASE_1.4",
                     "commit": "e2322c8f99f9d3a3cdc020b79c6c7224ad1988d0"
                 }

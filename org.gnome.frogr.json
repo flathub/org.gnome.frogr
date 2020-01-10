@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.frogr",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.30",
+    "runtime-version": "3.34",
     "sdk": "org.gnome.Sdk",
     "command": "frogr",
     "finish-args": [
@@ -14,10 +14,7 @@
         /* Access your pictures and videos */
         "--filesystem=xdg-pictures", "--filesystem=xdg-videos",
         /* Access your documents is useful too (e.g. for saving and loading projects) */
-        "--filesystem=xdg-documents",
-        /* Needed for dconf to work */
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--filesystem=xdg-documents"
     ],
     "cleanup": [ "/share/man" ],
     "modules": [
@@ -29,8 +26,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/frogr.git",
-                    "branch": "RELEASE_1.5",
-                    "commit": "2f4ae562fbc8c99dd0ac8c4ee5039ed87a06ec43"
+                    "tag": "RELEASE_1.6",
+                    "commit": "774eb3cacc229a0944e0094dafbdfab93e9352bc"
                 }
             ]
         }

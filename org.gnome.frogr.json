@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.frogr",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "45",
     "sdk": "org.gnome.Sdk",
     "command": "frogr",
     "finish-args": [
@@ -22,12 +22,15 @@
             "name": "frogr",
             "buildsystem": "meson",
             "builddir": true,
+            "config-opts": [
+                "--buildtype=release"
+            ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/frogr.git",
-                    "tag": "RELEASE_1.7",
-                    "commit": "35840366111bc8f6116d28fc03a3bf4c981368c1"
+                    "tag": "RELEASE_1.8",
+                    "commit": "88efbe2e38fb17927904fe35221eb4b08bf47f37"
                 }
             ]
         }

@@ -29,8 +29,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/frogr.git",
-                    "tag": "RELEASE_1.8",
-                    "commit": "88efbe2e38fb17927904fe35221eb4b08bf47f37"
+                    "commit": "76fea0eba0ca73beb435867826600cd736680cfc"
                 }
             ]
         }

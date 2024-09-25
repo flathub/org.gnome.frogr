@@ -1,0 +1,62 @@
+From b48a98440d8a146b84d92cc0997e651b11fc039e Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 28 Jul 2024 19:38:50 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+- Add vcs-browser URL to show the source code repository
+- Add translate URL to show the translation repository
+- Add missing launchable tag
+- Remove the none oars ratings
+---
+ data/org.gnome.frogr.appdata.xml.in | 33 ++++-----------------------------
+ 1 file changed, 4 insertions(+), 29 deletions(-)
+
+diff --git a/data/org.gnome.frogr.appdata.xml.in b/data/org.gnome.frogr.appdata.xml.in
+index eec2718..5c9dc19 100644
+--- a/data/org.gnome.frogr.appdata.xml.in
++++ b/data/org.gnome.frogr.appdata.xml.in
+@@ -33,37 +33,12 @@
+   <update_contact>msanchez@gnome.org</update_contact>
+   <url type="homepage">https://wiki.gnome.org/Apps/Frogr</url>
+   <url type="bugtracker">https://gitlab.gnome.org/GNOME/frogr/-/issues</url>
++  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/frogr</url>
++  <url type="translate">https://l10n.gnome.org/module/frogr/</url>
+   <url type="donation">https://www.gnome.org/donate</url>
++  <launchable type="desktop-id">org.gnome.frogr.desktop</launchable>
+   <translation type="gettext">frogr</translation>
+-  <content_rating type="oars-1.1">
+-    <content_attribute id="violence-cartoon">none</content_attribute>
+-    <content_attribute id="violence-fantasy">none</content_attribute>
+-    <content_attribute id="violence-realistic">none</content_attribute>
+-    <content_attribute id="violence-bloodshed">none</content_attribute>
+-    <content_attribute id="violence-sexual">none</content_attribute>
+-    <content_attribute id="violence-desecration">none</content_attribute>
+-    <content_attribute id="violence-slavery">none</content_attribute>
+-    <content_attribute id="violence-worship">none</content_attribute>
+-    <content_attribute id="drugs-alcohol">none</content_attribute>
+-    <content_attribute id="drugs-narcotics">none</content_attribute>
+-    <content_attribute id="drugs-tobacco">none</content_attribute>
+-    <content_attribute id="sex-nudity">none</content_attribute>
+-    <content_attribute id="sex-themes">none</content_attribute>
+-    <content_attribute id="sex-homosexuality">none</content_attribute>
+-    <content_attribute id="sex-prostitution">none</content_attribute>
+-    <content_attribute id="sex-adultery">none</content_attribute>
+-    <content_attribute id="sex-appearance">none</content_attribute>
+-    <content_attribute id="language-profanity">none</content_attribute>
+-    <content_attribute id="language-humor">none</content_attribute>
+-    <content_attribute id="language-discrimination">none</content_attribute>
+-    <content_attribute id="social-chat">none</content_attribute>
+-    <content_attribute id="social-info">none</content_attribute>
+-    <content_attribute id="social-audio">none</content_attribute>
+-    <content_attribute id="social-location">none</content_attribute>
+-    <content_attribute id="social-contacts">none</content_attribute>
+-    <content_attribute id="money-purchasing">none</content_attribute>
+-    <content_attribute id="money-gambling">none</content_attribute>
+-  </content_rating>
++  <content_rating type="oars-1.1" />
+   <releases>
+     <release version="1.8.1" date="2024-01-03">
+       <url>https://gitlab.gnome.org/GNOME/frogr/blob/master/NEWS</url>
+--
+libgit2 1.7.2
+

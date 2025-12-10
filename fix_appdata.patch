@@ -1,21 +1,46 @@
-From b48a98440d8a146b84d92cc0997e651b11fc039e Mon Sep 17 00:00:00 2001
+From 0564d4e8d39fdebfa4bf42a8d1fb5d03a3139880 Mon Sep 17 00:00:00 2001
 From: Sabri Ünal <yakushabb@gmail.com>
-Date: Sun, 28 Jul 2024 19:38:50 +0300
+Date: Wed, 10 Dec 2025 19:21:42 +0300
 Subject: [PATCH] Fix appdata papercuts
 
-- Add vcs-browser URL to show the source code repository
-- Add translate URL to show the translation repository
-- Add missing launchable tag
-- Remove the none oars ratings
 ---
- data/org.gnome.frogr.appdata.xml.in | 33 ++++-----------------------------
- 1 file changed, 4 insertions(+), 29 deletions(-)
+ data/org.gnome.frogr.appdata.xml.in | 44 ++++++++++++--------------------------------
+ 1 file changed, 12 insertions(+), 32 deletions(-)
 
 diff --git a/data/org.gnome.frogr.appdata.xml.in b/data/org.gnome.frogr.appdata.xml.in
-index eec2718..5c9dc19 100644
+index eec2718..d62b910 100644
 --- a/data/org.gnome.frogr.appdata.xml.in
 +++ b/data/org.gnome.frogr.appdata.xml.in
-@@ -33,37 +33,12 @@
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright 2009-2020 Mario Sanchez Prada <msanchez@gnome.org> -->
+-<component type="desktop">
+-  <id>org.gnome.frogr.desktop</id>
++<component type="desktop-application">
++  <id>org.gnome.frogr</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0-only</project_license>
+   <name>frogr</name>
+@@ -20,50 +20,30 @@
+   <screenshots>
+     <screenshot height="800" width="1280" type="default">
+       <image>
+-        https://wiki.gnome.org/Apps/Frogr?action=AttachFile&amp;do=get&amp;target=frogr-screenshot.png
++        https://wiki.gnome.org/attachments/Apps(2f)Frogr/frogr-screenshot.png
+       </image>
+       <caption>Screenshot of frogr</caption>
+     </screenshot>
+   </screenshots>
+   <provides>
+     <id>frogr.desktop</id>
++    <id>org.gnome.frogr.desktop</id>
+   </provides>
++   <replaces>
++    <id>frogr.desktop</id>
++    <id>org.gnome.frogr.desktop</id>
++  </replaces>
+   <project_group>GNOME</project_group>
+   <developer_name>Mario Sanchez Prada</developer_name>
    <update_contact>msanchez@gnome.org</update_contact>
    <url type="homepage">https://wiki.gnome.org/Apps/Frogr</url>
    <url type="bugtracker">https://gitlab.gnome.org/GNOME/frogr/-/issues</url>

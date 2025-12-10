@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.frogr",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "frogr",
     "finish-args": [
